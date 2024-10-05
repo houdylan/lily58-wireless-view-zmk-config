@@ -85,11 +85,11 @@
 
             display-name = "Lower";
             bindings = <
-&out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                           &trans     &trans     &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                 &kp F7     &kp F8     &kp F9           &kp F10           &kp F11            &kp F12
-&password     &kp F8        &kp F9        &kp F10       &kp F11       &kp F12                                &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR          &kp RPAR           &kp TILDE
-&trans        &trans        &trans        &trans        &trans        &trans        &kp LS(GRAVE)    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC          &kp RBRC           &kp PIPE
-                                          &trans        &trans        &trans        &trans           &trans  &trans     &trans     &trans
+&out OUT_TOG  &trans        &kp F2        &trans        &kp F4        &kp F5                                              &kp F6     &trans     &trans           &kp F9    &kp F10   &kp F12
+&trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                        &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
+&password     &kp F8        &kp F9        &kp F10       &kp F11       &kp F12                                             &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&trans        &trans        &trans        &trans        &trans        &trans        &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                          &trans        &trans        &trans        &trans               &trans           &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -105,11 +105,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &trans  &kp F2  &trans   &kp F4   &kp F5                                         &kp F6  &trans    &trans            &kp F9             &trans         &kp F12
-&trans  &trans  &trans  &trans   &trans   &trans                                         &trans  &trans    &kp UP_ARROW      &trans             &kp RC(HOME)   &kp RC(PAGE_UP)
-&trans  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12                                        &trans  &kp LEFT  &kp DOWN          &kp RIGHT          &kp RC(END)    &kp RC(PAGE_DOWN)
-&trans  &trans  &trans  &trans   &trans   &trans   &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-                        &trans   &trans   &trans   &kp C_PLAY           &trans           &trans  &trans    &trans
+&trans  &trans  &kp F2  &trans   &kp F4   &kp F5                                       &kp F6        &trans       &trans            &kp F9             &trans             &kp F12
+&trans  &trans  &trans  &trans   &trans   &trans                                       &kp RC(HOME)  &kp RC(END)  &kp UP_ARROW      &kp RC(PAGE_UP)    &kp RC(PAGE_DOWN)  &trans
+&trans  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12                                      &trans        &kp LEFT     &kp DOWN          &kp RIGHT          &trans             &trans
+&trans  &trans  &trans  &trans   &trans   &trans   &kp GRAVE     &kp NON_US_BACKSLASH  &trans        &trans       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH      &trans
+                        &trans   &trans   &trans   &kp C_PLAY    &trans                &trans        &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
